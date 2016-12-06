@@ -1,0 +1,8 @@
+<h1>BUILD DAT SURVEY</h1>
+<%= form_for @survey do |f| %>
+  <%= f.label :title "What you callin' yer survey?" %>
+  <%= f.text_field :title %>
+  <%= f.label :description "Give us a little description of it below my good buddy:" %>
+  <%= f.text_area :description %>
+  <%= f.submit "Submit it son!" %>
+<% end %>

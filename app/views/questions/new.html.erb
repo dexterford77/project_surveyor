@@ -1,0 +1,11 @@
+<h1>ENTER A QUESTION YOU WONDERFUL PERSON</h1>
+<%= form_for @question do |f| %>
+  <%= f.label :prompt "Enter yr prompt that all the little kiddies in internet-land will see & respond to!" %>
+  <%= f.text_field :prompt %>
+  <%= f.label :type %>
+  <%= f.radio_button :type, "MultiChoice" %>
+  <%= f.radio_button :type, "ShortAnswer" %>
+  <%= f.radio_button :type, "Numeric" %>
+  <%= f.check_box :required, "Required?" %>
+  <%= f.submit "Submit it son!" %>
+<% end %>
